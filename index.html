@@ -3,58 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   <title>BandMcNally</title>
   <style>
+    :root {
+      --font-body: 'IBM Plex Mono', monospace;
+      --font-size: 16px;
+      --color-bg: #f7f7f7;
+      --color-text: #111;
+      --color-accent: #000;
+      --color-muted: #777;
+      --max-width: 720px;
+    }
+  
     body {
-      font-family: monospace;
-      background-color: #f9f9f9;
-      color: #111;
-      line-height: 1.6;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-size: var(--font-size);
+      line-height: 1.7;
+      margin: 0 auto;
+      max-width: var(--max-width);
+      padding: 60px 24px;
     }
-    h1, h2 {
+  
+    h1, h2, h3 {
       margin-top: 2.5em;
+      line-height: 1.3;
+      font-weight: 600;
     }
-    form {
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2em;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5em;
+    }
+  
+    p, ul, ol {
       margin: 1em 0;
     }
+  
+    ul, ol {
+      padding-left: 1.5em;
+    }
+  
+    blockquote {
+      border-left: 3px solid #ccc;
+      padding-left: 1em;
+      margin: 1.5em 0;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+  
+    form {
+      margin: 2em 0;
+    }
+  
     input[type="email"] {
       width: 100%;
       padding: 0.75em;
       font-size: 1em;
-      border: 1px solid #aaa;
+      border: 1px solid #ccc;
       margin-bottom: 1em;
+      background: white;
+      box-sizing: border-box;
     }
+  
     button {
       padding: 0.75em 1.5em;
       font-size: 1em;
-      background-color: #000;
-      color: #fff;
+      background-color: var(--color-accent);
+      color: white;
       border: none;
       cursor: pointer;
+      transition: background-color 0.2s ease;
     }
+  
     button:hover {
-      background-color: #444;
+      background-color: #333;
     }
-    blockquote {
-      border-left: 3px solid #ccc;
-      padding-left: 1em;
-      font-style: italic;
-      color: #555;
+  
+    code {
+      background: #eee;
+      padding: 0.2em 0.4em;
+      font-size: 0.95em;
+      border-radius: 4px;
     }
-  </style>
+  
+    footer {
+      margin-top: 4em;
+      font-size: 0.875em;
+      color: var(--color-muted);
+      text-align: center;
+    }
+  </style>  
 </head>
 <body>
 
 <h1>Welcome to BandMcNally</h1>
-<p>A living map of underground music.</p>
-<p>BandMcNally tracks the people, bands, and scenes that shaped DIY culture — one thank-you list, flyer, and split 7" at a time.<br />
+<p>A living map of music.</p>
+<p>BandMcNally tracks the people, bands, and scenes that shaped DIY culture: one thank you list, flyer, and split 7" at a time.<br />
 Start in Buffalo. End up who-knows-where.</p>
 
 <h2>Join Early</h2>
-<p>We’re building from the ground up. Want in?</p>
+<p>We're building from the ground up. Want in?</p>
 <p><strong>Drop your email below to get early access and help shape the archive.</strong></p>
 
 <form action="https://formspree.io/f/xqalbqyq" method="POST">
@@ -83,12 +144,12 @@ These are not the first bands to come out of Buffalo — many came before — bu
 
 <p>It is not definitive.<br />It is not neutral.<br />But it is a place to begin.</p>
 
-<blockquote>You may not like everyone in the scene — but we’re all connected.</blockquote>
+<blockquote>You may not like everyone in the scene — but we're all connected.</blockquote>
 
 <h3>Categories</h3>
-<p>This is not a final canon — it’s a foundational grid.  
-Bands were selected for their <strong>impact</strong>, <strong>legacy</strong>, <strong>reach</strong>, or <strong>disruption</strong> within Buffalo’s local and global music maps.  
-Future redrafts may change who gets remembered, moved, or de-indexed. That’s the point.</p>
+<p>This is not a final canon — it's a foundational grid.  
+Bands were selected for their <strong>impact</strong>, <strong>legacy</strong>, <strong>reach</strong>, or <strong>disruption</strong> within Buffalo's local and global music maps.  
+Future redrafts may change who gets remembered, moved, or de-indexed. That's the point.</p>
 
 <h3>Hall of Fame</h3>
 <ol start="1">
@@ -140,14 +201,14 @@ Future redrafts may change who gets remembered, moved, or de-indexed. That’s t
 We believe every drummer swap, tour van breakdown, and split release is worth remembering.<br />
 We believe your band mattered — even if you only played two shows.</p>
 
-<p>We’re building this map for the kids who kept the flyer,<br />
+<p>We're building this map for the kids who kept the flyer,<br />
 the punks who wrote the PO box,<br />
 and the weirdos who read the liner notes like scripture.</p>
 
 <p>This is not about nostalgia.<br />
 This is about proof of life.</p>
 
-<blockquote>If you’ve ever mailed $3 to a PO box in Goleta, you’re part of this story.</blockquote>
+<blockquote>If you've ever mailed $3 to a PO box in Goleta, you're part of this story.</blockquote>
 
 </body>
 </html>
